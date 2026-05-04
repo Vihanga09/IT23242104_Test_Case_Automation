@@ -27,9 +27,15 @@ Step 3 — Install Playwright browser binaries
 bashpython -m playwright install
 
 ▶️ Running the Tests
-✅ Recommended Command
-bashpython test_automation.py \
-  --excel "IT23242104_Test_cases.xlsx" \
+✅ Recommended Command (Interactive Testing)
+
+python it23242104_test_automation.py --excel "D:\IT23242104\IT23242104_Test_cases.xlsx" --input-col "Input" --url "https://www.pixelssuite.com/chat-translator" --wait-ms 7000 --retry-wait-ms 1500 --retries 8 --type-delay-ms 50 --slow-mo-ms 200 --save-every 1
+
+
+Or with line breaks for readability:
+
+python it23242104_test_automation.py \
+  --excel "D:\IT23242104\IT23242104_Test_cases.xlsx" \
   --input-col "Input" \
   --url "https://www.pixelssuite.com/chat-translator" \
   --wait-ms 7000 \
@@ -38,6 +44,7 @@ bashpython test_automation.py \
   --type-delay-ms 50 \
   --slow-mo-ms 200 \
   --save-every 1
+```
 
 ⚠️ Important: Close the Excel file before running the script!
 
